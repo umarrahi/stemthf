@@ -104,6 +104,7 @@ h6 {
   color: var(--accent-color);
 }
 
+
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
@@ -447,16 +448,16 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
-  margin-right: 6px;
+  max-height: 50px;
+  margin-right: 8px;
 }
 
 .footer .footer-about .logo span {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: var(--heading-font);
-  color: var(--heading-color);
+  color: var(--accent-color);
 }
 
 .footer .footer-about p {
@@ -1247,7 +1248,7 @@ section,
 /*--------------------------------------------------------------
 # Stats About Section
 --------------------------------------------------------------*/
-.stats-about {
+/* .stats-about {
   --background-color: #f6f7f6;
   padding: 25px 0;
 }
@@ -1271,7 +1272,7 @@ section,
   font-family: var(--heading-font);
   font-size: 15px;
   font-weight: 600;
-}
+} */
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1731,7 +1732,7 @@ section,
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
-.pricing .pricing-item {
+/* .pricing .pricing-item {
   box-shadow: 0px 0px 4px rgba(var(--default-color-rgb), 0.1);
   padding: 20px;
   text-align: center;
@@ -1832,7 +1833,7 @@ section,
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -1964,9 +1965,27 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
+/*=============================================================
 # Custome CSS Start Here. (Umar Rahi)
+=============================================================*
+
+/*--------------------------------------------------------------
+# Hero Section
 --------------------------------------------------------------*/
+
+#hero{
+  /* margin-bottom: -200px; */
+}
+
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+/* #features{
+  position: absolute;
+  z-index: 3;
+} */
+
 
 /*--------------------------------------------------------------
 # Courses Section
@@ -1983,4 +2002,241 @@ section,
 
 .trainers-index .member {
   box-shadow: rgba(0, 0, 0, 0.21) 0px 1px 4px;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+  overflow: hidden;
+}
+
+.about .nav-tabs {
+  border: 0;
+}
+
+.about .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: #2c4964;
+  border-radius: 0;
+  border-right: 2px solid #ebf1f6;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.about .nav-link:hover {
+  color: #1977cc;
+}
+
+.about .nav-link.active {
+  color: #1977cc;
+  border-color: #1977cc;
+}
+
+.about .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.about .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2c4964;
+}
+
+.about .details p {
+  color: #777777;
+}
+
+.about .details p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .about .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+
+  .about .nav-link.active {
+    color: #fff;
+    background: #1977cc;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Course Details Page Card Section
+--------------------------------------------------------------*/
+.pricing .pricing-item {
+  box-shadow: 0px 0px 4px rgba(var(--default-color-rgb), 0.1);
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing .pricing-item span{
+  font-size: 10px;
+}
+
+.pricing .pricing-item h3 {
+  font-weight: 400;
+  /* margin: -20px -20px 20px -20px; */
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(var(--default-color-rgb), 0.8);
+  background: rgba(var(--default-color-rgb), 0.05);
+}
+
+
+
+.pricing .pricing-item h4 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.pricing .pricing-item h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing .pricing-item h4 span {
+  color: rgba(var(--default-color-rgb), 0.6);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing .pricing-item ul {
+  padding: 15px 10;
+  /* list-style: none; */
+  text-align: start;
+  line-height: 10px;
+  font-size: 14px;
+}
+
+.pricing .pricing-item ul li {
+  padding-bottom: 16px;
+}
+
+.pricing .pricing-item ul i {
+  color: var(--accent-color);
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing .pricing-item ul .na {
+  color: gba(var(--default-color-rgb), 0.6);
+  text-decoration: line-through;
+}
+
+.pricing .btn-wrap {
+  background: rgba(var(--default-color-rgb), 0.05);
+  margin: 0 -20px -20px -20px;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.pricing .btn-buy {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  border-radius: 4px;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .btn-buy:hover {
+  background: rgba(var(--accent-color-rgb), 0.8);
+}
+
+.pricing .featured h3 {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.pricing .advanced {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+}
+
+
+.stem-card .card{
+  border: none;
+}
+
+
+.card-header {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+.card-header .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+}
+.card-header span {
+  display: block;
+  font-size: 1rem;
+}
+.card-header small {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+}
+.card-body {
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px rgba(var(--default-color-rgb), 0.1);
+}
+.card-body p {
+  margin-bottom: 14px;
+}
+.card-footer {
+  background: rgba(var(--default-color-rgb), 0.05);
+  padding: 20px 15px;
+  text-align: center;
+}
+.card-footer .btn {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.card-footer .btn:hover{
+  background: rgba(var(--accent-color-rgb), 0.8);
 }

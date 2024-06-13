@@ -22,11 +22,12 @@
   --default-color-rgb: 68, 68, 68;
   --heading-color: #37423b;
   --heading-color-rgb: 55, 66, 59;
-  /* --accent-color: #5fcf80; */
+  --btn-hover-color: #5fcf80;
   --accent-color: #004BA4;
   --accent-color-rgb: 97, 206, 112;
   --contrast-color: #ffffff;
   --contrast-color-rgb: 255, 255, 255;
+  --bg-light-white: #F9F9F9; 
 }
 
 /* Nav Menu Colors */
@@ -796,7 +797,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
+/* .hero {
   --default-color: #ffffff;
   --default-color-rgb: 255, 255, 255;
   --background-color: #000000;
@@ -874,6 +875,182 @@ section,
   .hero p {
     font-size: 18px;
   }
+} */
+
+
+#hero {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(63, 73, 83, 0.8);
+  overflow: hidden;
+  position: relative;
+}
+
+#hero .carousel,
+#hero .carousel-inner,
+#hero .carousel-item,
+#hero .carousel-item::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#hero .carousel-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero .carousel-item::before {
+  content: "";
+  background-color: rgba(30, 35, 40, 0.6);
+}
+
+#hero .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 70px;
+  left: 50px;
+  right: 50px;
+}
+
+#hero .container {
+  text-align: center;
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+#hero p {
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#hero .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+  opacity: 0;
+}
+
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-start,
+#hero .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#hero .carousel-inner .carousel-item-next,
+#hero .carousel-inner .carousel-item-prev,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 30px;
+  line-height: 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .carousel-control-next-icon:hover,
+#hero .carousel-control-prev-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#hero .carousel-indicators li {
+  list-style-type: none;
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#hero .carousel-indicators li.active {
+  opacity: 1;
+  background: var(--accent-color);
+}
+
+#hero .btn-get-started {
+  /* font-family: "Raleway", sans-serif; */
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  animation-delay: 0.8s;
+  background: var(--accent-color);
+}
+
+#hero .btn-get-started:hover {
+  background: var(--btn-hover-color);
+}
+
+@media (max-width: 992px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero .carousel-container {
+    top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
+    width: 5%;
+  }
+}
+
+@media (max-height: 500px) {
+  #hero {
+    height: 120vh;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -937,8 +1114,22 @@ section,
 /*--------------------------------------------------------------
 # Counts Section
 --------------------------------------------------------------*/
+/* #counts{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+} */
+
 .counts {
-  --background-color: #f6f7f6;
+  /* --background-color: #f6f7f6; */
+  background-image: url(/assets/img/stem-images/IMG-20240603-WA0007.jpg) rgba(0, 0, 0, 0.9);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: ; */
+
   padding: 25px 0;
 }
 
@@ -1216,6 +1407,10 @@ section,
 .trainers-index .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+
+#management-team{
+  background-color: var(--bg-light-white);
 }
 
 /*--------------------------------------------------------------
@@ -1973,7 +2168,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 
-#hero{
+#hero {
   /* margin-bottom: -200px; */
 }
 
@@ -2079,7 +2274,7 @@ section,
   overflow: hidden;
 }
 
-.pricing .pricing-item span{
+.pricing .pricing-item span {
   font-size: 10px;
 }
 
@@ -2180,7 +2375,7 @@ section,
 }
 
 
-.stem-card .card{
+.stem-card .card {
   border: none;
 }
 
@@ -2192,6 +2387,7 @@ section,
   text-align: center;
   position: relative;
 }
+
 .card-header .badge {
   position: absolute;
   top: 10px;
@@ -2200,15 +2396,18 @@ section,
   color: #007bff;
   border: none;
 }
+
 .card-header span {
   display: block;
   font-size: 1rem;
 }
+
 .card-header small {
   display: block;
   font-size: 10px;
   font-weight: bold;
 }
+
 .card-body {
   padding: 20px;
   border-radius: 4px;
@@ -2216,14 +2415,17 @@ section,
   overflow: hidden;
   box-shadow: 0px 0px 4px rgba(var(--default-color-rgb), 0.1);
 }
+
 .card-body p {
   margin-bottom: 14px;
 }
+
 .card-footer {
   background: rgba(var(--default-color-rgb), 0.05);
   padding: 20px 15px;
   text-align: center;
 }
+
 .card-footer .btn {
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -2237,6 +2439,6 @@ section,
   transition: 0.3s;
 }
 
-.card-footer .btn:hover{
+.card-footer .btn:hover {
   background: rgba(var(--accent-color-rgb), 0.8);
 }

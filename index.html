@@ -46,8 +46,9 @@
               <li><a href="stem-drp-details.html">Design and Rapid Prototyping</a></li>
             </ul>
           </li>
+          <li><a href="#">STEM Kids</a></li>
           <li><a href="#board-members">Members</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <!-- <li><a href="#contact">Contact Us</a></li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -61,9 +62,9 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <section id="hero" class="hero">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <!-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
       <div class="container text-center">
         <h2 data-aos="fade-up" data-aos-delay="100" class="">Empowering Tomorrow's Innovators <br> Shaping the Future of
@@ -74,6 +75,79 @@
         <div class="mt-4" data-aos="fade-up" data-aos-delay="300">
           <a href="#stem-courses" class="btn-get-started">Get Started</a>
         </div>
+      </div> -->
+
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators">
+          <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class=""></li>
+          <li data-bs-target="#heroCarousel" data-bs-slide-to="1" class=""></li>
+          <li data-bs-target="#heroCarousel" data-bs-slide-to="2" class="active" aria-current="true"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item" style="background-image: url(assets/img/stem-images/hero-1.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Unlocking Potential Through <br> <span>STEM
+                    Education</span></h2>
+                <p class="animate__animated animate__fadeInUp">The Hunar Foundation is dedicated to unlocking the full
+                  potential of every student through innovative STEM education. Our courses offer a unique blend of
+                  theoretical knowledge and practical application, ensuring that learners gain a deep understanding of
+                  core concepts while developing critical thinking and problem-solving skills. With a focus on
+                  real-world applications, we prepare students for the challenges and opportunities of the future,
+                  fostering a love for learning that lasts a lifetime.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item active carousel-item-start"
+            style="background-image: url(assets/img/stem-images/hero-2.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Empowering Tomorrow's <br> Innovators Today</h2>
+                <p class="animate__animated animate__fadeInUp">At The Hunar Foundation, we believe in the power of
+                  education to transform lives. Our comprehensive STEM programs are designed to ignite curiosity and
+                  inspire creativity in students of all ages. By providing hands-on learning experiences, we equip young
+                  minds with the skills and knowledge they need to thrive in the ever-evolving fields of science,
+                  technology, engineering, and mathematics. Join us on a journey to empower the next generation of
+                  thinkers, makers, and problem-solvers.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item carousel-item-next carousel-item-start"
+            style="background-image: url(assets/img/stem-images/hero-3.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Building Future-Ready <br> Skills Together</h2>
+                <p class="animate__animated animate__fadeInUp">We are committed to building future-ready skills through
+                  our dynamic STEM curriculum. Our programs are tailored to meet the needs of today's learners,
+                  combining engaging content with interactive projects that bring concepts to life. By fostering
+                  collaboration, creativity, and innovation, we empower students to take charge of their learning and
+                  pursue their passions with confidence. Together, we can create a brighter future where everyone has
+                  the opportunity to succeed.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
       </div>
 
     </section>

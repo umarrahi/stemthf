@@ -1123,13 +1123,14 @@ section,
 } */
 
 .counts {
-  /* --background-color: #f6f7f6; */
-  background-image: url(/assets/img/stem-images/IMG-20240603-WA0007.jpg) rgba(0, 0, 0, 0.9);
+  /* background-color: #f6f7f6; */
+  background-color: var(--accent-color);
+
+  /* background-image: url(/assets/img/stem-images/IMG-20240603-WA0007.jpg) rgba(0, 0, 0, 0.9);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   /* background-color: ; */
-
   padding: 25px 0;
 }
 
@@ -1141,12 +1142,13 @@ section,
 .counts .stats-item span {
   font-size: 48px;
   display: block;
-  color: var(--accent-color);
+  color: var(--contrast-color);
   font-weight: 700;
 }
 
 .counts .stats-item p {
-  color: rgba(var(--default-color-rgb), 0.6);
+  /* color: rgba(var(--default-color-rgb), 0.6); */
+  color: var(--contrast-color);
   padding: 0;
   margin: 0;
   font-family: var(--heading-font);
